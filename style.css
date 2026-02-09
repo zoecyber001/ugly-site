@@ -1,13 +1,31 @@
+/*
+ * ================================
+ * THE WORLD'S UGLIEST CSS FILE
+ * ================================
+ * 
+ * Created by someone who clearly hates their eyes
+ * 
+ * If you're a designer reading this, I'm sorry.
+ * If you're my boss reading this, I can explain.
+ * If you're my mom reading this, I became a web developer just like you wanted!
+ * (You never specified I had to be a GOOD one)
+ */
+
 body {
+    /* This background GIF is probably broken. That's intentional. Maybe. */
     background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtYmx6eW14bm14bm14bm14bm14bm14bm14bm14bm14bm14/26tOZ42Mg6pbTUPhw/giphy.gif');
     color: lime;
+    /* The color of envy... and this website */
     font-family: 'Comic Sans MS', 'Wingdings', sans-serif;
-    /* Wingdings if possible for randomness */
+    /* Fun fact: using Wingdings as a fallback is a choice */
     cursor: wait;
+    /* You'll be waiting forever for this site to make sense */
     overflow-x: hidden;
     animation: rainbow 5s infinite;
+    /* taste the rainbow, see the rainbow */
 }
 
+/* The rainbow filter that makes everything look like a fever dream */
 @keyframes rainbow {
     0% {
         filter: hue-rotate(0deg);
@@ -18,6 +36,11 @@ body {
     }
 }
 
+/* 
+ * FLASH ANIMATION
+ * Warning: May cause eye strain, headaches, and regret
+ * Doctors hate this one weird trick!
+ */
 @keyframes flash {
     0% {
         opacity: 1;
@@ -32,18 +55,29 @@ body {
     }
 }
 
+/* 
+ * Headings styled by a caffeinated gremlin
+ * The negative letter-spacing makes text look ｓｑｕｉｓｈｅｄ
+ */
 h1,
 h2,
 h3 {
     text-shadow: 5px 5px 0px red, -5px -5px 0px blue;
     letter-spacing: -5px;
     transform: rotate(2deg);
+    /* nothing should be straight on this site */
 }
 
+/* 
+ * FAKE POPUPS
+ * These bad boys jitter around like they've had too much coffee
+ * Which is exactly how I felt making this
+ */
 .popup {
     position: fixed;
     background: cyan;
     border: 5px outset pink;
+    /* outset borders are peak 2002 */
     padding: 20px;
     font-weight: bold;
     color: black;
@@ -51,6 +85,7 @@ h3 {
     z-index: 50;
 }
 
+/* The jitter animation - simulating an earthquake on your screen */
 @keyframes jitter {
     0% {
         transform: translate(0, 0) scale(1);
@@ -73,16 +108,20 @@ h3 {
     }
 }
 
+/* Why help cursor? Because nothing on this site is helpful */
 button {
     cursor: help;
 }
 
+/* Links that SCREAM when you hover over them */
 a:hover {
     font-size: 50px;
     background: white;
     color: black;
 }
 
+/* Tables looking like construction zone barriers */
+/* CAUTION: TABLE AHEAD */
 table {
     background: repeating-linear-gradient(45deg,
             yellow,
@@ -91,34 +130,54 @@ table {
             red 20px);
 }
 
-/* UGLY SCROLLBARS */
+/* 
+ * SCROLLBAR MAKEOVER
+ * Because even scrollbars deserve to be ugly
+ * (they didn't ask for this)
+ */
 ::-webkit-scrollbar {
     width: 30px;
+    /* THICC scrollbar */
     background: repeating-linear-gradient(0deg, red, red 10px, yellow 10px, yellow 20px);
 }
 
 ::-webkit-scrollbar-thumb {
     background: lime;
     border: 5px solid purple;
+    /* It looks like a radioactive pickle. You're welcome. */
 }
 
-/* HORRIBLE TEXT SELECTION */
+/* 
+ * TEXT SELECTION 
+ * Select any text and witness the horror
+ */
 ::selection {
     background: magenta;
     color: yellow;
+    /* looks like a highlighter threw up */
 }
 
-/* INPUTS LOOK TERRIBLE */
+/* Make all inputs look like they're from a hacker movie */
 input,
 textarea {
     font-family: 'Comic Sans MS', 'Papyrus', cursive !important;
     border-radius: 0 50px 0 50px !important;
+    /* asymmetry is art, right? */
     background: black !important;
     color: lime !important;
 }
 
-/* LINKS EXPANDED ON HOVER */
+/* Links that can't decide if they're underlined or not */
 a {
     color: lime !important;
     text-decoration: underline overline !important;
 }
+
+/*
+ * End of CSS file
+ * 
+ * If you've read this far, please drink some water,
+ * touch some grass, and maybe see a therapist.
+ * 
+ * I know I need to.
+ */
