@@ -1,0 +1,124 @@
+body {
+    background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDdtYmx6eW14bm14bm14bm14bm14bm14bm14bm14bm14bm14/26tOZ42Mg6pbTUPhw/giphy.gif');
+    color: lime;
+    font-family: 'Comic Sans MS', 'Wingdings', sans-serif;
+    /* Wingdings if possible for randomness */
+    cursor: wait;
+    overflow-x: hidden;
+    animation: rainbow 5s infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+h1,
+h2,
+h3 {
+    text-shadow: 5px 5px 0px red, -5px -5px 0px blue;
+    letter-spacing: -5px;
+    transform: rotate(2deg);
+}
+
+.popup {
+    position: fixed;
+    background: cyan;
+    border: 5px outset pink;
+    padding: 20px;
+    font-weight: bold;
+    color: black;
+    animation: jitter 0.5s infinite;
+    z-index: 50;
+}
+
+@keyframes jitter {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    25% {
+        transform: translate(10px, -10px) scale(1.1);
+    }
+
+    50% {
+        transform: translate(-5px, 5px) scale(0.9);
+    }
+
+    75% {
+        transform: translate(5px, 5px) scale(1.2);
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+button {
+    cursor: help;
+}
+
+a:hover {
+    font-size: 50px;
+    background: white;
+    color: black;
+}
+
+table {
+    background: repeating-linear-gradient(45deg,
+            yellow,
+            yellow 10px,
+            red 10px,
+            red 20px);
+}
+
+/* UGLY SCROLLBARS */
+::-webkit-scrollbar {
+    width: 30px;
+    background: repeating-linear-gradient(0deg, red, red 10px, yellow 10px, yellow 20px);
+}
+
+::-webkit-scrollbar-thumb {
+    background: lime;
+    border: 5px solid purple;
+}
+
+/* HORRIBLE TEXT SELECTION */
+::selection {
+    background: magenta;
+    color: yellow;
+}
+
+/* INPUTS LOOK TERRIBLE */
+input,
+textarea {
+    font-family: 'Comic Sans MS', 'Papyrus', cursive !important;
+    border-radius: 0 50px 0 50px !important;
+    background: black !important;
+    color: lime !important;
+}
+
+/* LINKS EXPANDED ON HOVER */
+a {
+    color: lime !important;
+    text-decoration: underline overline !important;
+}
